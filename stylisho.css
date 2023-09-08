@@ -1,0 +1,121 @@
+
+ul li
+{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    margin: 1cm;
+	margin-left: -4.5cm;
+    margin-top: -6.2cm;
+    padding-left: -30px;
+    padding-right: -30cm;
+}
+   ol li:hover ol{
+          display: block;
+          list-style: none;
+      float: right;
+          margin: 1cm;
+          margin-left: -5.7cm;
+          
+      }
+ol li { 
+           list-style: none;
+      text-decoration: none;
+          float: right;
+          border: 1px;
+      background-color: black;
+          width: 100px;
+          height: 40px;
+          border-radius: 13px;
+          line-height: 39px;
+          text-align: center;
+          font-size:  16px;
+          font-family: gabriola bold;
+ 
+     }
+  a:hover
+      {
+          list-style:none;
+          text-decoration: none;
+          float: right;
+          border: 1px;
+          background-color: black;
+          width: 100px;
+          height: 40px;
+          border-radius: 13px;
+          line-height: 39px;
+          text-align: center;
+          color:white;
+          font-size:16px;
+          font-family: gabriola bold;
+      }
+a
+{
+text-decoration: none;
+color: grey;
+}
+table{
+    color: grey;
+}
+.footer
+{
+padding-top: 20px;
+background-color:black;
+height: 120px;
+padding: 20px;
+border: 1px solid rgb(0, 0, 0);
+margin: 0px;
+text-align: center;
+color: aliceblue;
+}
+.footer {
+width: 75%;
+display:inline-block;
+}
+p5{
+  color: rgb(7, 226, 234);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-small
+}
+body{
+background-color: black;
+}
+form{
+    background: rgb(30, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    float: right;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #555;
+    font-size: 16px;
+}
+form button{
+    padding: 10px;
+    background: #555;
+    color: aliceblue;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    margin: 30px auto 0;
+    border-radius: 10px;
+
+}
+th{
+    font-size: x-large;
+    color: rgb(112, 245, 29);
+}
+

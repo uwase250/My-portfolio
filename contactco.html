@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/home1-bg.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    section {
+      position: relative;
+      z-index: 3;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  
+    }
+
+    .container {
+      max-width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #515050;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      color: #FFF;
+      font-weight: bold;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .section-header p {
+      color: #afacac;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .contact-info {
+      width: 50%;
+    }
+
+    .contact-info-item {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    .contact-info-icon {
+      height: 70px;
+      width: 70px;
+      background-color: #ffffff;
+      text-align: center;
+      border-radius: 50%;
+
+    }
+
+    .contact-info-icon i {
+      font-size: 30px;
+      line-height: 70px;
+      color: #00bcd4;
+    }
+
+    .contact-info-content {
+      margin-left: 20px;
+    }
+
+    .contact-info-content h4 {
+      color: #1da9c0;
+      font-size: 1.4em;
+      margin-bottom: 5px;
+    }
+
+    .contact-info-content p {
+      color: #ffffff;
+      font-size: 1em;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 40px;
+      width: 45%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .contact-form h2 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-form .input-box {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contact-form .input-box input,
+    .contact-form .input-box textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+    .contact-form .input-box span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #080808;
+    }
+
+    .contact-form .input-box input:focus~span,
+    .contact-form .input-box textarea:focus~span {
+      color: cadetblue;
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .contact-form .input-box input[type="submit"] {
+      width: 100%;
+      background: #00bcd4;
+      color: #FFF;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #00bcd4;
+      transition: 0.5s;
+    }
+
+    .contact-form .input-box input[type="submit"]:hover {
+      background: #FFF;
+      color: #00bcd4;
+    }
+
+    @media (max-width: 991px) {
+      section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .contact-info {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+    }
+
+
+
+
+
+
+    .section-header .container h2 {
+      color: #1da9c0;
+    }
+
+    #menu-section {
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 12%;
+
+    }
+
+    #footer-section {
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 12%;
+    }
+
+
+
+    ul li
+{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    margin: 1cm;
+	  margin-left: -4.5cm;
+    margin-top: -6.2cm;
+    padding-left: -30px;
+    padding-right: -30cm;
+}
+
+    p2 {
+      color: rgb(7, 226, 234);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: small;
+      text-align: right;
+    }
+
+
+
+
+    ol li:hover ol {
+      display: block;
+      list-style: none;
+      float: right;
+      margin: 1cm;
+      margin-left: -5.7cm;
+
+    }
+
+    ol li {
+      list-style: none;
+      text-decoration: none;
+      float: right;
+      border: 1px;
+      background-color: black;
+      width: 100px;
+      height: 40px;
+      border-radius: 13px;
+      line-height: 39px;
+      text-align: center;
+      font-size: 16px;
+      font-family: gabriola bold;
+
+    }
+
+    a:hover {
+      list-style: none;
+      text-decoration: none;
+      border: 1px;
+      background-color: black;
+      width: 100px;
+      height: 40px;
+      border-radius: 13px;
+      line-height: 39px;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-family: gabriola bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+  </style>
+
+  <title>Contact Us</title>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Emefx9z3SgqDZvqSI");
+      })();
+    </script>
+</head>
+
+<body>
+
+  <section>
+
+    <ol>&nbsp;&nbsp;
+      <li><a href="talkco.html">Let's talk</a>
+      <li><a href="contactco.html">Contact</a>
+      <li><a href="portfolioco.html">Portfolio</a>
+      <li><a href="serviceco.html">Services</a>
+      <li><a href="aboutco.html">About</a>
+      <li><a href="index.html">Home</a>
+      </li><img src="LOGO.png " style="width: 10%;">
+    </ol>
+
+    <div class="section-header">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We're delighted to connect with you! Whether you have questions, feedback, or simply want to say hello, this
+          is the place to do it. we value your input, and we're eager to hear from you. Feel free to reach out using the
+          contact form below,
+          Thank you for considering us as your destination for information, support, or collaboration. We look forward
+          to your message and the opportunity to assist you.
+          Let's start a conversation!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>Rwanda Country,<br /> kigali city, <br />Kicukiro-Gikondo</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p>250783225940</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="contact-info-content">
+              <h4>Email</h4>
+              <p>uwasenelly2000@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 border-left py-3">
+        <h1>Contact form</h1>
+        <div class="form-group">
+          <h5 for="name">Name</h5>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <h5 for="email">Email</h5>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <h5 for="message">Message</h5>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+      </div>
+      </div>
+    </div>
+    <img src="LOGO.png " style="width: 9%;height: 40%;">
+    <ol>
+      <li><a href="talkco.html">Let's talk</a>
+      <li><a href="contactco.html">Contact</a>
+      <li><a href="portfolio.html">Portfolio</a>
+      <li><a href="serviceco.html">Services</a>
+      <li><a href="aboutco.html">About</a>
+      <li><a href="index.html">Home</a>
+      </li>
+    </ol><br><br><br>
+    <center>
+      <p2>
+        </ce>&COPY;Allright reserved by Uwase Anice Nelly</p2>
+    </center>
+  </section>
+
+</body>
+
+</html>
